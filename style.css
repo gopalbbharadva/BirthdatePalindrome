@@ -1,0 +1,61 @@
+*{
+    /* outline: 2px solid red; */
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    background-image: url('Images/hbday.jpg');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-container{
+    border: 2px solid black;
+    padding: 4rem;
+    display: flex;
+    border-radius:1rem ;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.7);
+    /* background-color: blue; */
+}
+img{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+input[type=date]{
+    font-size: 1rem;
+    font-family: serif;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    background-color: aqua;
+    padding: 1rem 2rem;
+    border-radius: 2rem ;
+    margin:1rem 0;
+}
+
+button{
+    cursor: pointer;
+    font-size: large;
+    font-family: sans-serif;
+    align-self: center;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+}
+button:hover{
+    opacity: 0.9;
+}
