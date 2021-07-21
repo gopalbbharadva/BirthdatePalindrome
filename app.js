@@ -9,18 +9,26 @@ const lastDateArray = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  setTimeout(() => {
+    start();
+  }, 1000);
+});
+
+function start() {
   var dateArray = date.value.split("-");
   var year = dateArray[0];
   var month = dateArray[1];
   var day = dateArray[2];
   var setResult = isPalindrome(year, month, day);
-  if (setResult) output.innerHTML = `<h1>${setResult}</h1>`;
+  if (setResult)
+    output.innerHTML = `<h2 style="color:#3B82F6; font-weight:bold;">Nice!! your birthdate is palindrome with seqence of 
+  <span style="color:black">${setResult}</span></h2>`;
   else {
     let [palindromeDate, days] = farDate(day, month, year);
-    output.innerHTML = `<h1>Sorry you were left with ${days} 
-    and nearest birthdate is ${palindromeDate} </h1>`;
+    output.innerHTML = `<h2>Sorry you were left with ${days} 
+    days and nearest birthdate is ${palindromeDate} </h2>`;
   }
-});
+}
 
 function isPalindrome(yyyy, mm, dd) {
   var df1 = yyyy + mm + dd;
