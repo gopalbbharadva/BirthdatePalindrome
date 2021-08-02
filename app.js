@@ -25,8 +25,8 @@ function start() {
   <span style="color:black">${setResult}</span></h2>`;
   else {
     let [palindromeDate, days] = farDate(day, month, year);
-    output.innerHTML = `<h2>Sorry you were left with ${days} 
-    days and nearest birthdate is ${palindromeDate} </h2>`;
+    output.innerHTML = `<p id="text">Sorry you were left with <span style="color:#EF4444;font-weight:bold"> ${days} </span>
+    days and nearest birthdate is <span style="color:#3B82F6;font-weight:bold"> ${palindromeDate} </span> </p>`;
   }
 }
 
