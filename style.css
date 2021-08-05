@@ -1,22 +1,22 @@
+
+
 * {
   /* outline: 2px solid red; */
 }
 
 body {
-  min-width: 70vh;
   margin: 0;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   min-height: 70vh;
 }
 img {
   align-self: center;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
 }
 .container {
-  width: 100%;
   padding: 1rem;
-  max-width: 400px;
+  max-width: 600px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -24,14 +24,10 @@ img {
   flex-direction: column;
 }
 .sub-container {
-  background-color: #fecaca;
-  border: 2px solid black;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1rem;
-  box-shadow: 0 2px 10px rgb(0 0 0 / 0.7);
 }
 
 form {
@@ -43,9 +39,8 @@ form {
 input[type="date"] {
   font-size: 1rem;
   font-family: serif;
-  border: none;
-  box-shadow: 1px 1px 3px black;
-  padding: 1rem 2rem;
+  border: 2px solid #1d4ed8;
+  padding: 0.5rem;
   border-radius: 2rem;
   margin: 1rem 0;
   align-self: center;
@@ -58,9 +53,10 @@ button {
   font-family: sans-serif;
   align-self: center;
   color: white;
-  background-color: black;
-  border-radius: 5px;
-  padding: 0.7rem 1rem;
+  border: none;
+  background-color: #1d4ed8;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
 button:hover {
   opacity: 0.9;
@@ -73,5 +69,17 @@ h2 {
 #text {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
+  text-align: start;
+}
+
+#timerGif {
+  background: transparent;
+}
+.result {
+  margin: 0;
+  font-size: 1.3rem;
+  border: 2px solid #1d4ed8;
+  padding: 1rem;
+  display: none;
 }

@@ -10,18 +10,33 @@
   <body>
     <div class="container">
       <img src="Images/bday.png" alt="" />
-      <p id="text">
-        Enter your birthdate and it will check your birthdate is palindrome or
-        not by cheking formats like
-        <span style="background-color: #d1d5db"
-          >yyyy-mm-dd, mm-dd-yyyy and mm-dd-yy</span
-        > .
+      <h1 id="text">
+        Enter your birthdate and we will tell you if your birthdate is a
+        palindrome
+      </h1>
+      <h3>
+        This app checks your birthdate in 4 formats yyyy-mm-dd, dd-mm-yyyy,
+        mm-dd-yy, m-dd-yyyy
+      </h3>
+      <p>
+        e.g. if your birthdate is 05 may 2001, then app will check for 20010524,
+        24052001, 052401, 5242001
       </p>
+
       <div class="sub-container">
         <form>
-          <div class="result"></div>
+          <img
+            id="timerGif"
+            style="display: none"
+            src="Images/Clock with hands.gif"
+            alt=""
+          />
           <input type="date" required id="date" />
-          <button type="submit" id="checkButton">Check</button>
+          <button id="checkButton">Check</button>
+          <p id="error" style="color: #ef4444; display: none">
+            Oops!!!Please set your birthdate
+          </p>
+          <div class="result"></div>
         </form>
       </div>
     </div>
